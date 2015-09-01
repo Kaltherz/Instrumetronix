@@ -1,0 +1,166 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.vicce.myapplication.Configuration"
+    android:id="@+id/x">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView2"
+        android:src="@mipmap/instrumetronix_small"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:inputType="time"
+        android:hint="Min"
+        android:ems="10"
+        android:id="@+id/editText2"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/Vinculated"
+        android:layout_marginTop="50dp" />
+
+    <EditText
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:hint="Hora"
+        android:ems="10"
+        android:id="@+id/editText"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="50dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Hora"
+
+        android:id="@+id/Time"
+        android:layout_below="@+id/editText2"
+        android:layout_toEndOf="@+id/editText"
+        android:layout_marginTop="24dp" />
+
+    <EditText
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Seg"
+        android:ems="10"
+        android:id="@+id/editText3"
+
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/textView3"
+        android:layout_marginTop="50dp" />
+
+    <TextView
+        android:layout_width="5dp"
+        android:layout_height="20dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text=":"
+        android:id="@+id/Vinculated"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_toEndOf="@id/editText"
+        android:layout_alignBottom="@+id/editText2"
+        android:textSize="20dp"
+        android:layout_marginTop="50dp" />
+
+    <TextView
+        android:layout_width="5dp"
+        android:layout_height="20dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text=":"
+        android:id="@+id/textView3"
+        android:layout_alignParentTop="true"
+        android:layout_alignBottom="@+id/editText2"
+        android:layout_alignEnd="@+id/editText2"
+        android:textSize="20dp"
+        android:layout_marginTop="50dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/editText4"
+        android:hint="DD"
+        android:layout_below="@+id/Time"
+        android:layout_marginTop="34dp"
+        android:layout_alignEnd="@+id/editText"
+        android:layout_alignStart="@+id/editText" />
+
+    <TextView
+        android:layout_width="5dp"
+        android:layout_height="20dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="/"
+        android:id="@+id/textView"
+        android:layout_alignTop="@+id/editText4"
+        android:layout_toStartOf="@+id/editText2"
+        android:layout_alignBottom="@+id/editText4"
+        android:layout_alignEnd="@+id/Vinculated"
+        android:textSize="15dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/editText5"
+        android:hint="MM"
+        android:layout_alignTop="@+id/textView"
+        android:layout_alignEnd="@+id/editText2"
+        android:layout_toEndOf="@+id/textView" />
+
+    <TextView
+        android:layout_width="5dp"
+        android:layout_height="20dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="/"
+        android:id="@+id/textView4"
+
+        android:layout_alignTop="@+id/editText5"
+        android:textSize="15dp"
+        android:layout_alignBottom="@+id/editText5"
+        android:layout_alignEnd="@+id/textView3" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/editText6"
+        android:hint="AA"
+        android:layout_alignTop="@+id/textView4"
+        android:layout_alignEnd="@+id/editText3"
+        android:layout_alignStart="@+id/editText3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Fecha"
+        android:id="@+id/textView5"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GUARDAR"
+        android:id="@+id/save_date"
+        android:layout_above="@+id/imageView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="63dp" />
+
+</RelativeLayout>

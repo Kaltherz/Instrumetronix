@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Conectar</string>
+    <string name="action_exit">Salir</string>
+    <string name="erase_vinculated">Borrar Vinculados</string>
+    <string name="title_activity_configuration">Configuraciones</string>
+    <string name="title_activity_configuration__clock">Configuracion Tiempo y Fecha</string>
+    <string name="title_activity_bluetooth__configuration">Control de Bluetooth</string>
+    <string name="title_activity_device_list">DeviceListActivity</string>
+    <string name="title_activity_discovery">DiscoveryActivity</string>
+    <string name="title_activity_sample_utils">SampleUtils</string>
+    <string name="title_activity_server">ServerActivity</string>
+    <string name="title_activity_client_socket">ClientSocketActivity</string>
+    <string name="title_activity_obex">OBEXActivity</string>
+    <string name="title_activity_led_control">ledControl</string>
+</resources>
